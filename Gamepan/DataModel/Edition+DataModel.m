@@ -47,7 +47,7 @@
                 
                 if (retValue)
                 {
-                    retValue.name = name;
+                    retValue.EditionName = name;
                 }
             }
         }

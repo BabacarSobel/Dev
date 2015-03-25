@@ -7,6 +7,7 @@
 //
 
 #import "Game.h"
+#import "Category.h"
 #import "Edition.h"
 #import "Extension.h"
 #import "Rule.h"
@@ -20,6 +21,7 @@
 @dynamic gameAuthor;
 @dynamic gameCreationDate;
 @dynamic gameName;
+@dynamic categorised;
 @dynamic edited;
 @dynamic gameSession;
 @dynamic gameTheme;

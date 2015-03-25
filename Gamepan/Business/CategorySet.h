@@ -1,5 +1,5 @@
 //
-//  ThemeSet.h
+//  CategorySet.h
 //  Gamepan
 //
 //  Created by Babacar-sobel Thiaw on 25/03/2015.
@@ -7,15 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Theme+DataModel.h"
+#import "Category+DataModel.h"
 
-@interface ThemeSet : NSObject
-
+@interface CategorySet : NSObject
 @property (strong, nonatomic) NSMutableOrderedSet *list;
 
 // ===== METHODS =====
 
-- (void)addTheme:(Theme *)theme;
-- (void)removeTheme:(Theme *)theme;
+- (void)addType:(GameCategory *)type;
+- (void)removeType:(GameCategory *)type;
 
 @end

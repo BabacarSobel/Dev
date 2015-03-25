@@ -1,5 +1,5 @@
 //
-//  ThemeSet.h
+//  LanguageSet.h
 //  Gamepan
 //
 //  Created by Babacar-sobel Thiaw on 25/03/2015.
@@ -7,15 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Theme+DataModel.h"
+#import "Language+DataModel.h"
 
-@interface ThemeSet : NSObject
+@interface LanguageSet : NSObject
 
 @property (strong, nonatomic) NSMutableOrderedSet *list;
 
 // ===== METHODS =====
 
-- (void)addTheme:(Theme *)theme;
-- (void)removeTheme:(Theme *)theme;
-
+- (void)addLanguage:(Language *)language;
+- (void)removeLanguage:(Language *)language;
 @end

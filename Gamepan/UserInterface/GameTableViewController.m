@@ -9,9 +9,12 @@
 #import "GameTableViewController.h"
 #import "AppDelegate.h"
 #import "GameTableViewCell.h"
+#import "Game+DataModel.h"
+#import "AddGameViewController.h"
 
-@interface GameTableViewController ()
-
+@interface GameTableViewController ()<NSFetchedResultsControllerDelegate>
+@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
+@property (strong, nonatomic) NSIndexPath *selectedFactions; // to handle selected items
 @end
 
 @implementation GameTableViewController
@@ -66,7 +69,6 @@
     }
     
     return count;
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
 }
 
@@ -81,8 +83,6 @@
     }
     
     return numberOfRows;
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
 
 }
 
@@ -100,8 +100,8 @@
 - (void)configureCell:(GameTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     
     Game *game = (Game *)[self.fetchedResultsController objectAtIndexPath:indexPath];
-    cell.name.text = game.name;
-    cell.type.text = game.type;
+    cell.gameNameCell.text = game.gameName;
+    //cell.gameCategoryCell.text = game.categorised;
     
 }
 
@@ -119,14 +119,12 @@
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     
-#warning
-    /*
      if (editingStyle == UITableViewCellEditingStyleDelete) {
      // Delete the row from the data source
      [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
      } else if (editingStyle == UITableViewCellEditingStyleInsert) {
      // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-     }*/
+     }
     
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the managed object for the given index path

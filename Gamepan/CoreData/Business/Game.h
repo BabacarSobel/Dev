@@ -9,13 +9,14 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class  Edition, Extension, Rule, Session, Theme, Variant;
+@class GameCategory, Edition, Extension, Rule, Session, Theme, Variant;
 
 @interface Game : NSManagedObject
 
 @property (nonatomic, retain) NSString * gameAuthor;
 @property (nonatomic, retain) NSDate * gameCreationDate;
 @property (nonatomic, retain) NSString * gameName;
+@property (nonatomic, retain) GameCategory *categorised;
 @property (nonatomic, retain) NSSet *edited;
 @property (nonatomic, retain) NSSet *gameSession;
 @property (nonatomic, retain) Theme *gameTheme;

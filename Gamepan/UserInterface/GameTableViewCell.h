@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface GameTableViewCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UILabel *GameNameCell;
-@property (weak, nonatomic) IBOutlet UILabel *GameThemeCell;
+@property (weak, nonatomic) IBOutlet UILabel *gameNameCell;
+@property (weak, nonatomic) IBOutlet UILabel *gameCategoryCell;
 
 @end

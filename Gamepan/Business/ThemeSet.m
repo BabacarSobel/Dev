@@ -10,4 +10,13 @@
 
 @implementation ThemeSet
 
+-(void)addTheme:(Theme *)theme
+{
+    [_list addObject:theme];
+}
+
+-(void)removeTheme:(Theme *)theme
+{
+    [_list removeObject:theme];
+}
 @end

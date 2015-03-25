@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "GameSet.h"
+#import "GameTableViewController.h"
 
 @implementation AppDelegate
 

@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Valentin Bercot & Remy Tartiere. All rights reserved.
 //
 
-#import "Type+DataModel.h"
+#import "Category+DataModel.h"
 
 // ===== DEFINITION =====
 

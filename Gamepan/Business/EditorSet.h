@@ -1,5 +1,5 @@
 //
-//  ThemeSet.h
+//  EditorSet.h
 //  Gamepan
 //
 //  Created by Babacar-sobel Thiaw on 25/03/2015.
@@ -7,15 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Theme+DataModel.h"
+#import "Editor+DataModel.h"
 
-@interface ThemeSet : NSObject
 
+@interface EditorSet : NSObject
 @property (strong, nonatomic) NSMutableOrderedSet *list;
-
-// ===== METHODS =====
-
-- (void)addTheme:(Theme *)theme;
-- (void)removeTheme:(Theme *)theme;
+- (void)addEditor:(Editor *)editor;
+- (void)removeEditor:(Editor *)editor;
 
 @end
