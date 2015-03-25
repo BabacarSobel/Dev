@@ -7,21 +7,24 @@
 //
 
 #import "AppDelegate.h"
-#import "GameSet.h"
+#import "Game+DataModel.h"
 #import "GameTableViewController.h"
+
+@interface AppDelegate ()
+
+@end
 
 @implementation AppDelegate
 
-@synthesize gameset = _gameset;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
-    UINavigationController *navController = tabBarController.viewControllers[0];
+    //UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+   // UINavigationController *navController = tabBarController.viewControllers[0];
     
-    GameTableViewController * gameTableViewController = (GameTableViewController *) navController.topViewController;
-    
+  //  GameTableViewController * gameTableViewController = (GameTableViewController *) navController.topViewController;
+    GameTableViewController * gameTableViewController;
     gameTableViewController.managedObjectContext = self.managedObjectContext;
     return YES;
 }

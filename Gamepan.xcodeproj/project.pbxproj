@@ -207,6 +207,7 @@
 		6E82738A1AC2ED21009C3A40 /* Gamepan */ = {
 			isa = PBXGroup;
 			children = (
+				6E8273B91AC2ED94009C3A40 /* DataCore */,
 				6E8273F61AC2FA91009C3A40 /* Business */,
 				6E8273BB1AC2EDAA009C3A40 /* DataModel */,
 				6E8273BA1AC2ED9F009C3A40 /* UserInterface */,
@@ -290,7 +291,6 @@
 				6E8273F41AC2FA36009C3A40 /* GameTableViewController.m */,
 				6E3A7DFA1AC3201F008F501B /* AddGameViewController.h */,
 				6E3A7DFB1AC3201F008F501B /* AddGameViewController.m */,
-				6E8273B91AC2ED94009C3A40 /* DataCore */,
 			);
 			name = UserInterface;
 			sourceTree = "<group>";
